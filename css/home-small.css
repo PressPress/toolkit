@@ -164,7 +164,7 @@ hr.big-3 {
   position: absolute;
   left: 6%;
   top: 50%;
-  margin-top: -44%;
+  /*margin-top: -44%;*/
   display: block;
 }
 
