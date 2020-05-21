@@ -158,12 +158,13 @@ hr.big-3 {
 
 .title {
   font-family: 'CentSchbook Mono BT W011455489', serif;
+  color: pink;
   text-align: center;
   font-size: 11vw;
   line-height: 1.05em;
   position: absolute;
   left: 6%;
-  top: 50%;
+  top: 100%;
   /*margin-top: -44%;*/
   display: block;
 }
