@@ -114,6 +114,8 @@ body {
   right: 7px;
   overflow: scroll;
   background-color: #1caf5c;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 #left-gradient {
