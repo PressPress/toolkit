@@ -94,7 +94,7 @@ body {
 
 #right-gradient {
   z-index: 1;
-  position: fixed;
+  /*position: fixed;*/
   height: 100%;
   width: 100%;
   top: 1px;
@@ -137,7 +137,7 @@ hr.big-1 {
   background-color: white;
   margin-left: -4px;
   width: calc(100% - 23px);
-  position: relative;
+  /*position: relative;*/
 }
 
 hr.big-2 {
@@ -177,7 +177,7 @@ hr.big-3 {
   font-size: 9vw;
   line-height: .85em;
   margin: -3px 0 -7px -5px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .subtitle-2 {
