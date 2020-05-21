@@ -462,13 +462,13 @@ hr.big-1 {
 }
 
 .modal-open {
-  bottom: -65%;
+  bottom: -10%;
   transform: none;
   transform: rotate(-2.5deg);
 }
 
 .modal-open:hover {
-  bottom: -74vh;
+  bottom: -8%;
   transition: .5s;
 }
 
