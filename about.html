@@ -178,7 +178,15 @@
         $('.page-navigation').onePageNav();
       });
 
+    var menuTop = document.getElementById( 'left-side-s1' ), //left side
 
+          showTop100 = document.getElementById( 'showTop100' ), //menu
+          body = document.body;
+
+          showTop100.onclick = function() {                  //menu
+            classie.toggle( this, 'active' );
+            classie.toggle( menuTop, 'left-half-open' );
+          };
 
     </script>
 
