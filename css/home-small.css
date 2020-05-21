@@ -105,6 +105,7 @@ body {
   z-index: 20;
   margin: 0px;
   width: 100%;
+  display: table;
 }
 
 
@@ -158,14 +159,15 @@ hr.big-3 {
 
 .title {
   font-family: 'CentSchbook Mono BT W011455489', serif;
-  color: blue;
+  color: purple;
   text-align: center;
   font-size: 11vw;
   line-height: 1.05em;
   position: absolute;
   left: 6%;
+  display: table-cell;
   vertical-align: middle;
-  display: block;
+  margin-top: -50%;
 }
 
 .title-medium {
