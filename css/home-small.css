@@ -82,7 +82,7 @@ body {
   height: calc(100% - 14px);
   top: 7px;
   right: 7px;
-  overflow: scroll;
+  overflow: none;
 }
 
 #left-gradient {
