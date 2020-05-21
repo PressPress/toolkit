@@ -451,9 +451,9 @@ hr.big-1 {
   z-index: 1000; /* Sit on top */
   overflow: scroll;
   width: 90%;
-  height: 50%;
+  height: 80%;
   /*top: 7vh;*/
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   transform: rotate(-1.5deg);
   transition: .5s;
@@ -462,7 +462,7 @@ hr.big-1 {
 }
 
 .modal-open {
-  bottom: -8%;
+  bottom: -73%;
   transform: none;
   transform: rotate(-2.5deg);
 }
