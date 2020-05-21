@@ -1,0 +1,264 @@
+html {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: .001em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: white;
+}
+
+#menu {
+  display: block;
+  position: fixed;
+  width: 35px;
+  z-index: 100;
+  right: 20px;
+  top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  #menu {
+    width: 29px;
+    top: 19px;
+  }
+}
+
+#showMenu {
+  display: block;
+}
+
+/* BORDER */
+
+#top, #bottom, #left, #right, #middle {
+	background: white;
+	position: fixed;
+  z-index: 100;
+	}
+#left, #right, #middle {
+		top: 0; bottom: 0;
+		width: 7px;
+		}
+#left { left: 0; }
+#right { right: 0; }
+#middle {
+    width: 0;
+    height: 0;
+  }
+
+#top, #bottom {
+		left: 0; right: 0;
+		height: 7px;
+		}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* HALVES */
+
+.left-half {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: 100%;
+  left: 7px;
+  overflow: scroll;
+  z-index: 10;
+  top: -100%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.left-half-open {
+  top: 0;
+}
+
+#right-half {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  top: 7px;
+  right: 7px;
+  overflow: scroll;
+}
+
+#left-gradient {
+  z-index: 0;
+  position: fixed;
+  height: 100%;
+  width: calc(100% - 14px);
+}
+
+#right-gradient {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 1px;
+}
+
+.body-copy {
+  position: relative;
+  z-index: 20;
+  margin: 0px;
+  width: 100%;
+}
+
+
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  position: static;
+  -webkit-transform:translateX(15px);
+  -moz-transform:translateX(15px);
+  -o-transform:translateX(15px);
+  transform:translateX(15px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: -4px;
+  width: calc(100% - 23px);
+}
+
+hr.big-2 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 4px;
+  width: calc(100% - 39px);
+}
+
+hr.big-3 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+}
+
+.title {
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  text-align: center;
+  font-size: 11vw;
+  line-height: 1.05em;
+  position: absolute;
+  left: 4.3vw;
+  top: 50vh;
+  margin-top: -45.5vw;
+  display: block;
+}
+
+.title-medium {
+  display: none;
+}
+
+.subtitle-1 {
+  font-family: 'Blitz', sans-serif;
+  font-size: 9vw;
+  line-height: .85em;
+  margin: -3px 0 -7px -5px;
+}
+
+.subtitle-2 {
+  font-family: 'Blitz', sans-serif;
+  font-size: 9vw;
+  line-height: .85em;
+  margin: 0;
+}
+
+@media only screen and (max-width: 300px) {
+  .subtitle-1 {
+    font-size: 9.5vw;
+    line-height: .85em;
+    margin: -3px 0 -3px -5px;
+  }
+
+  .subtitle-2 {
+    font-family: 'Blitz', sans-serif;
+    font-size: 9.5vw;
+    line-height: .85em;
+    padding-top: 2px;
+  }
+}
+
+.bottom {
+  position: fixed;
+  bottom: 12px;
+  width: 100%;
+  left: 15px;
+}
+
+/* T O C */
+
+.chapter {
+  position: relative;
+  z-index: 200;
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  font-size: 10vw;
+  line-height: .9em;
+  margin: 8px 0 10px 10px;
+  width: calc(100% - 40px);
+}
+
+hr.big-3 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+}
+
+hr.big-mobile {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+  display: block;
+}
+
+.small-space {
+  height: 48px;
+}
+
+@media only screen and (min-width: 300px) {
+  .small-space {
+    height: 58px;
+  }
+}
+
+.medium-space {
+  height: 20px;
+}
+
+.number {
+  font-family: 'Blitz', sans-serif;
+  position: absolute;
+  float: right;
+  right: 17px;
+  font-size: 8vw;
+  margin-top: 4px;
+  padding-right: 8px;
+  margin-right: -8px;
+}

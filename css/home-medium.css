@@ -1,0 +1,196 @@
+html {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: .001em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: white;
+}
+
+/* BORDER */
+
+#top, #bottom, #left, #right, #middle {
+	background: white;
+	position: fixed;
+  z-index: 100;
+	}
+#left, #right, #middle {
+		top: 0; bottom: 0;
+		width: 7px;
+		}
+#left { left: 0; }
+#right { right: 0; }
+#middle {
+    left: calc(35% - 5px);
+  }
+
+#top, #bottom {
+		left: 0; right: 0;
+		height: 7px;
+		}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* HALVES */
+
+.left-half {
+  position: fixed;
+  width: calc(35% - 15px);
+  height: 100%;
+  left: 7px;
+  overflow: scroll;
+  z-index: 10;
+}
+
+#right-half {
+  position: fixed;
+  width: calc(65% - 7px);
+  height: calc(100% - 14px);
+  top: 7px;
+  right: 7px;
+  overflow: scroll;
+}
+
+#left-gradient {
+  z-index: 0;
+  position: fixed;
+  height: 100%;
+  width: calc(35% - 10px);
+}
+
+#right-gradient {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 1px;
+}
+
+.body-copy {
+  position: relative;
+  z-index: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100% - 30px);
+}
+
+/* TOC */
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  position: static;
+  -webkit-transform:translateX(15px);
+  -moz-transform:translateX(15px);
+  -o-transform:translateX(15px);
+  transform:translateX(15px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+hr.big-2 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(100% - 5px);
+}
+
+hr.big-3 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 19px);
+  margin: 0px 0 0 10px;
+}
+
+hr.big-mobile {
+  display: none;
+}
+
+.title {
+  display: none;
+}
+
+.title-medium {
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  text-align: center;
+  font-size: 7vw;
+  line-height: 1.05em;
+  position: absolute;
+  top: 50vh;
+  margin-top: -24.7vw;
+  left: 4.3vw;
+  display: block;
+}
+
+.subtitle-1 {
+  font-family: 'Blitz', sans-serif;
+  font-size: 4.8vw;
+  line-height: .85em;
+  margin: -1px 0 -4px 0;
+}
+
+.subtitle-2 {
+  font-family: 'Blitz', sans-serif;
+  font-size: 4.8vw;
+  line-height: .85em;
+  margin-top: 0px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: -3vw;
+  width: calc(65% - 34px);
+}
+
+.chapter {
+  position: relative;
+  z-index: 200;
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  font-size: 3.9vw;
+  line-height: .9em;
+  margin: 8px 0 10px 10px;
+  width: calc(100% - 40px);
+}
+
+.small-space {
+  height: 5px;
+}
+
+.medium-space {
+  height: 20px;
+}
+
+.number {
+  font-family: 'Blitz', sans-serif;
+  position: absolute;
+  float: right;
+  right: 14px;
+  font-size: 3.2vw;
+  margin-top: 4px;
+  padding-right: 8px;
+  margin-right: -8px;
+}
