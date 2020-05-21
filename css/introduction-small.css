@@ -457,6 +457,8 @@ hr.big-1 {
   right: 5%;
   transform: rotate(-1.5deg);
   transition: .5s;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 .modal-open {
