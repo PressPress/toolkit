@@ -188,6 +188,11 @@ hr.big-mobile {
   margin: 8px 0 10px 15px;
 }
 
+.mobile-spacing {
+  margin-bottom: 10px;
+  display: block;
+}
+
 @media only screen and (min-width: 1500px) {
   .chapter {
     font-size: 4.18em;
