@@ -224,6 +224,11 @@ hr.big-mobile {
   margin-left: 25px;
 }
 
+.mobile-spacing {
+  margin-bottom: 10px;
+  display: block;
+}
+
 .number {
   font-family: 'Blitz', sans-serif;
   position: absolute;
