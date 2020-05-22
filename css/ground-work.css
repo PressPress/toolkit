@@ -188,6 +188,10 @@ hr.big-mobile {
   margin: 8px 0 10px 15px;
 }
 
+.mobile-selected {
+  margin-left: 20px;
+}
+
 @media only screen and (min-width: 1500px) {
   .chapter {
     font-size: 4.18em;
