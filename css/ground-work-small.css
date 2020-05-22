@@ -220,6 +220,10 @@ hr.big-mobile {
   width: calc(100% - 40px);
 }
 
+.mobile-selected {
+  margin-left: 25px;
+}
+
 .number {
   font-family: 'Blitz', sans-serif;
   position: absolute;
