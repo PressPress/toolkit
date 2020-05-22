@@ -314,18 +314,18 @@ hr.big-1 {
 
 .chapter-text {
   font-family: 'CenturySchoolbookW01-Ro', serif;
-  font-size: .97em;
+  font-size: 10em;
   line-height: 1.3em;
   letter-spacing: .01em;
   z-index: 2;
   position: relative;
   margin: 0 15px 0 15px;
-	color: white;
+	color: pink;
 }
 
 @media only screen and (max-width: 400px) {
   .chapter-text {
-    font-size: .97em;
+    font-size: 10em;
     line-height: 1.3em;
     letter-spacing: .01em;
     margin: 0 10px 0 10px;
