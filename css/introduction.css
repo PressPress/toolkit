@@ -90,6 +90,11 @@ body::-webkit-scrollbar {
   -webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
+  -ms-overflow-style: none;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 .left-half-open {
@@ -387,7 +392,16 @@ hr.big-1 {
   z-index: 100;
   top: 50vw;
   width: 40vw;
+ -ms-overflow-style: none;
 }
+
+
+.pic1::-webkit-scrollbar {
+
+    display: none;
+
+}
+
 
 .pic-size {
   max-width: 100%;
