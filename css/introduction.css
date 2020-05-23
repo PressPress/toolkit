@@ -91,6 +91,7 @@ body::-webkit-scrollbar {
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
   -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 
 .left-half::-webkit-scrollbar {
