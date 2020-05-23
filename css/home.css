@@ -53,6 +53,7 @@ body {
   overflow: scroll;
   z-index: 10;
   background-color: #f39bc2;
+  overflow-x: hidden;
 }
 
 #right-half {
