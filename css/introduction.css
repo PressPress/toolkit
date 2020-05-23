@@ -12,6 +12,11 @@ body {
   height: 100vh;
   margin: 0;
   background-color: white;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* CURSOR & HIGHLIGHT */
@@ -430,6 +435,11 @@ hr.big-1 {
   position: absolute;
   padding-left: 20px;
   padding-right: 20px;
+  -ms-overflow-style: none;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
 }
 
 /* The Close Button */
