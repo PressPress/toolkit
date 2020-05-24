@@ -263,6 +263,10 @@ ul {
   padding-top: 24px;
 }
 
+.chapter-text a {
+  text-decoration: underline #F9D946;
+}
+
 @media only screen and (min-width: 1500px) {
   .TOC-subsection {
     font-size: 3.08em;
