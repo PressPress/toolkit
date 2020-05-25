@@ -5,10 +5,20 @@ html {
   letter-spacing: .001em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
   background: white;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #menu {
@@ -70,10 +80,15 @@ body {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
+  -ms-overflow-style: none;
 }
 
 .left-half-open {
   top: 0;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 #right-half {
@@ -82,8 +97,13 @@ body {
   height: calc(100% - 14px);
   top: 7px;
   right: 7px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
