@@ -5,10 +5,20 @@ html {
   letter-spacing: .001em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
   background: white;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* BORDER */
@@ -46,6 +56,11 @@ body {
   top: 7px;
   overflow: scroll;
   z-index: 10;
+  -ms-overflow-style: none;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 #right-half {
@@ -56,6 +71,11 @@ body {
   right: 7px;
   overflow: scroll;
   z-index: 10;
+  -ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
