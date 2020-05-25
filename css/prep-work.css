@@ -430,6 +430,11 @@ hr.big-1 {
   top: 250vw;
   width: 40vw;
   height: auto;
+	-ms-overflow-style: none;
+}
+
+.pic::-webkit-scrollbar {
+    display: none;
 }
 
 .pic-size {
