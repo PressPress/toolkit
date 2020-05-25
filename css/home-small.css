@@ -15,7 +15,7 @@ body {
   display: block;
   position: fixed;
   width: 35px;
-  z-index: 100;
+  z-index: 1000;
   right: 20px;
   top: 20px;
 }
@@ -100,15 +100,6 @@ body {
   top: 1px;
 }
 
-.body-copy {
-  position: relative;
-  z-index: 20;
-  margin: 0px;
-  width: 100%;
-  display: table;
-}
-
-
 
 a {
   display: block;
@@ -132,15 +123,6 @@ a:hover {
   transition: .5s;
 }
 
-hr.big-1 {
-  border: 1px solid white;
-  border-radius: 5px;
-  background-color: white;
-  margin-left: -4px;
-  width: calc(100% - 23px);
-  /*position: relative;*/
-}
-
 hr.big-2 {
   border: 1px solid white;
   border-radius: 5px;
@@ -157,59 +139,58 @@ hr.big-3 {
   margin: 0px 0 0 10px;
 }
 
+.body-copy {
+  position: absolute;
+  z-index: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  height: calc(100% - 28px);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ align-items: flex-start;
+}
+
 .title {
+  display: block;
   font-family: 'CentSchbook Mono BT W011455489', serif;
-  color: purple;
   text-align: center;
   font-size: 11vw;
   line-height: 1.05em;
-  position: absolute;
-  left: 6%;
-  display: table-cell;
-  vertical-align: middle;
-  margin-top: -50%;
+  position: relative;
+  align-self: center;
+}
+
+.author {
+  align-self: flex-end;
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: -12px;
 }
 
 .title-medium {
   display: none;
 }
 
-.subtitle-1 {
-  font-family: 'Blitz', sans-serif;
-  font-size: 9vw;
-  line-height: .85em;
-  margin: -3px 0 -7px -5px;
-  /*position: relative;*/
-}
-
-.subtitle-2 {
-  font-family: 'Blitz', sans-serif;
-  font-size: 9vw;
-  line-height: .85em;
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
   margin: 0;
 }
 
-@media only screen and (max-width: 300px) {
-  .subtitle-1 {
-    font-size: 9.5vw;
-    line-height: .85em;
-    margin: -3px 0 -3px -5px;
-  }
 
-  .subtitle-2 {
-    font-family: 'Blitz', sans-serif;
-    font-size: 9.5vw;
-    line-height: .85em;
-    padding-top: 2px;
-  }
+.subtitle {
+  font-family: 'Blitz', sans-serif;
+  font-size: 7vw;
+  line-height: .85em;
+  margin: 12px 0 0 0;
 }
 
-.bottom {
-  position: fixed;
-  bottom: 12px;
-  width: 100%;
-  left: 15px;
+.title-medium {
+  display: none;
 }
+
 
 /* T O C */
 
