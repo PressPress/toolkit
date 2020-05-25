@@ -74,17 +74,9 @@ body {
 
 #right-gradient {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   height: 100%;
-  width: 100%;
-}
-
-.body-copy {
-  position: relative;
-  z-index: 20;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 50%;
 }
 
 
@@ -111,11 +103,6 @@ a:hover {
   transition: .5s;
 }
 
-hr.big-1 {
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
 hr.big-2 {
   border: 1px solid white;
   border-radius: 5px;
@@ -135,58 +122,53 @@ hr.big-mobile {
   display: none;
 }
 
+.body-copy {
+  position: absolute;
+  z-index: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  height: calc(100% - 28px);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ align-items: flex-start;
+}
+
 .title {
   font-family: 'CentSchbook Mono BT W011455489', serif;
   text-align: center;
   font-size: 5.2vw;
   line-height: 1.05em;
-  position: absolute;
-  top: 50vh;
-  margin-top: -21.7vw;
-  left: 3.8vw;
+  position: relative;
+  align-self: center;
+}
+
+.author {
+  align-self: flex-end;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .title-medium {
   display: none;
 }
 
-@media only screen and (min-width: 1500px) {
-  .title {
-    font-size: 4.36em;
-    top: 50vh;
-    margin-top: -325px;
-    left: calc(50% - 320px);
-  }
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0;
 }
 
-.subtitle-1 {
+
+.subtitle {
   font-family: 'Blitz', sans-serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: .85em;
-  margin: -2px 0 -8px 0;
+  margin: 12px 0 0 0;
 }
 
-.subtitle-2 {
-  font-family: 'Blitz', sans-serif;
-  font-size: 4vw;
-  line-height: .85em;
-  margin-top: 0px;
-}
 
-@media only screen and (min-width: 1500px) {
-  .subtitle-1 {
-    font-size: 3.08em;
-  }
-  .subtitle-2 {
-    font-size: 3.08em;
-  }
-}
-
-.bottom {
-  position: fixed;
-  bottom: -2.5vw;
-  width: calc(50% - 47px);
-}
 
 .chapter {
   position: relative;
