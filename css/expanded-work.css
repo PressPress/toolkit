@@ -5,6 +5,11 @@ html {
   letter-spacing: .001em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+	-ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -12,6 +17,11 @@ body {
   height: 100vh;
   margin: 0;
   background-color: white;
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #home {
@@ -81,6 +91,11 @@ body {
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
   overflow-x: hidden;
+	-ms-overflow-style: none;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 .left-half-open {
@@ -99,6 +114,12 @@ body {
   height: calc(100% - 20px);
   right: 10px;
   background-color: #1caf5c;
+	-ms-overflow-style: none;
+}
+
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
@@ -471,6 +492,11 @@ hr.big-1 {
   top: 200vw;
   width: 47vw;
   height: auto;
+	-ms-overflow-style: none;
+}
+
+.pic::-webkit-scrollbar {
+    display: none;
 }
 
 .pic-2 {
