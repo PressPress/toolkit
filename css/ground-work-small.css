@@ -7,6 +7,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -14,6 +19,11 @@ body {
   height: 100vh;
   margin: 0;
   background-color: white;
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #home {
@@ -92,6 +102,11 @@ body {
   -moz-transition: all .3s ease;
   transition: all .3s ease;
   background-color: #f39bc2;
+	-ms-overflow-style: none;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 .left-half-open {
@@ -116,6 +131,11 @@ body {
   background-color: #1caf5c;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+	-ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
@@ -458,6 +478,11 @@ hr.big-1 {
   margin-left: 0vw;
   margin-top: 50px;
   margin-bottom: 10px;
+	-ms-overflow-style: none;
+}
+
+.medium-image::-webkit-scrollbar {
+    display: none;
 }
 
 .pic-size {
