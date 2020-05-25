@@ -43,6 +43,7 @@ body {
   width: calc(35% - 15px);
   height: 100%;
   left: 7px;
+  top: 7px;
   overflow: scroll;
   z-index: 10;
 }
@@ -54,6 +55,7 @@ body {
   top: 7px;
   right: 7px;
   overflow: scroll;
+  z-index: 10;
 }
 
 #left-gradient {
@@ -65,20 +67,11 @@ body {
 
 #right-gradient {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   height: 100%;
-  width: 100%;
-  top: 1px;
+  width: 65%;
 }
 
-.body-copy {
-  position: relative;
-  z-index: 20;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: calc(100% - 30px);
-}
 
 /* TOC */
 
@@ -102,12 +95,6 @@ a:hover {
   -moz-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-}
-
-hr.big-1 {
-  border: 1px solid white;
-  border-radius: 5px;
-  width: 100%;
 }
 
 hr.big-2 {
@@ -134,36 +121,47 @@ hr.big-mobile {
   display: none;
 }
 
+.body-copy {
+  position: absolute;
+  z-index: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  height: calc(100% - 18px);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ align-items: flex-start;
+}
+
 .title-medium {
+  display: block;
   font-family: 'CentSchbook Mono BT W011455489', serif;
   text-align: center;
   font-size: 7vw;
   line-height: 1.05em;
-  position: absolute;
-  top: 50vh;
-  margin-top: -24.7vw;
-  left: 4.3vw;
-  display: block;
+  position: relative;
+  align-self: center;
 }
 
-.subtitle-1 {
+.author {
+  align-self: flex-end;
+  flex-grow: 1;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.subtitle {
   font-family: 'Blitz', sans-serif;
-  font-size: 4.8vw;
+  font-size: 4vw;
   line-height: .85em;
-  margin: -1px 0 -4px 0;
-}
-
-.subtitle-2 {
-  font-family: 'Blitz', sans-serif;
-  font-size: 4.8vw;
-  line-height: .85em;
-  margin-top: 0px;
-}
-
-.bottom {
-  position: fixed;
-  bottom: -3vw;
-  width: calc(65% - 34px);
+  margin: 12px 0 0 0;
 }
 
 .chapter {
