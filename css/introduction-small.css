@@ -7,6 +7,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -14,8 +19,11 @@ body {
   height: 100vh;
   margin: 0;
   background-color: white;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #home {
@@ -118,8 +126,11 @@ body {
   background-color: #1caf5c;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
@@ -303,7 +314,7 @@ ul {
 hr.big-1 {
   border: 1px solid white;
   border-radius: 5px;
-  width: calc(100% - 32px);
+  width: calc(100% - 20px);
   margin: 5px 0 0 15px;
   z-index: 2;
   position: relative;
