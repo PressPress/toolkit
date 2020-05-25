@@ -314,7 +314,7 @@ ul {
 hr.big-1 {
   border: 1px solid white;
   border-radius: 5px;
-  width: calc(100% - 20px);
+  width: calc(100% - 32px);
   margin: 5px 0 0 15px;
   z-index: 2;
   position: relative;
