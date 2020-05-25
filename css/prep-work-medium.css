@@ -357,6 +357,11 @@ hr.big-1 {
   margin-left: 5.3vw;
   margin-top: 50px;
   margin-bottom: 10px;
+	-ms-overflow-style: none;
+}
+
+.medium-image::-webkit-scrollbar {
+    display: none;
 }
 
 .pic-size {
