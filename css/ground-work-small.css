@@ -354,7 +354,6 @@ hr.big-1 {
 
 .chapter-text>a {
  	text-decoration: underline;
-	color: blue;
 }
 
 @media only screen and (max-width: 400px) {
