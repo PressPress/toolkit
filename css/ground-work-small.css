@@ -26,9 +26,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-p {
-	padding-bottom: 200px;
-	color: pink;
+.extra-padding {
+	padding-bottom: 50px;
 }
 
 #home {
@@ -355,8 +354,7 @@ hr.big-1 {
 }
 
 .chapter-text>a {
- text-decoration: underline yellow;
-	color: blue;
+ 	text-decoration: underline yellow;
 }
 
 @media only screen and (max-width: 400px) {
