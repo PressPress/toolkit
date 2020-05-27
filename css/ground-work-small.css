@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+p {
+	margin-bottom: 50px;
+}
+
 #home {
   display: none;
 }
