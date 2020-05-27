@@ -353,7 +353,7 @@ hr.big-1 {
 }
 
 .chapter-text>a {
- 	text-decoration: underline yellow;
+ 	text-decoration: underline;
 }
 
 @media only screen and (max-width: 400px) {
