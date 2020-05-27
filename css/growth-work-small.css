@@ -31,8 +31,8 @@ body::-webkit-scrollbar {
 }
 
 p {
-  margin-bottom: 10px;
-  color: purple;
+  margin-bottom: 30px;
+  color: yellow;
 }
 
 #home-mobile {
