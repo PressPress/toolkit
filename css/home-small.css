@@ -167,11 +167,9 @@ hr.big-3 {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  height: calc(100% - 20px);
   display: flex;
-  height: calc(100% - 28px);
-  flex-wrap: wrap;
-  justify-content: flex-start;
- align-items: flex-start;
+  overflow: hidden;
 }
 
 .title {
@@ -180,19 +178,8 @@ hr.big-3 {
   text-align: center;
   font-size: 11vw;
   line-height: 1.05em;
-  position: relative;
   align-self: center;
-}
-
-.author {
-  align-self: flex-end;
-  flex-grow: 1;
-  margin: 0;
-  margin-bottom: -12px;
-}
-
-.title-medium {
-  display: none;
+  margin-top: 0%;
 }
 
 hr.big-1 {
@@ -201,16 +188,23 @@ hr.big-1 {
   margin: 0;
 }
 
-
 .subtitle {
   font-family: 'Blitz', sans-serif;
-  font-size: 8vw;
+  font-size: 6vw;
   line-height: .85em;
-  margin: 12px 0 0 0;
+  margin: 12px 0 5px 0;
 }
 
-.title-medium {
-  display: none;
+.top {
+ position: absolute;
+ top: 0;
+ width: calc(100% - 30px);
+}
+
+.bottom {
+ position: absolute;
+ bottom: 0;
+ width: calc(100% - 30px);
 }
 
 
