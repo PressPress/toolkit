@@ -128,11 +128,9 @@ hr.big-mobile {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
   display: flex;
-  height: calc(100% - 28px);
-  flex-wrap: wrap;
-  justify-content: flex-start;
- align-items: flex-start;
+  overflow: hidden;
 }
 
 .title {
@@ -140,15 +138,10 @@ hr.big-mobile {
   text-align: center;
   font-size: 5.2vw;
   line-height: 1.05em;
-  position: relative;
   align-self: center;
+  margin-top: 0%;
 }
 
-.author {
-  align-self: flex-end;
-  flex-grow: 1;
-  margin: 0;
-}
 
 .title-medium {
   display: none;
@@ -160,15 +153,24 @@ hr.big-1 {
   margin: 0;
 }
 
-
 .subtitle {
   font-family: 'Blitz', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3.2vw;
   line-height: .85em;
   margin: 12px 0 0 0;
 }
 
+.top {
+ position: absolute;
+ top: 0;
+ width: calc(100% - 30px);
+}
 
+.bottom {
+ position: absolute;
+ bottom: 25px;
+ width: calc(100% - 30px);
+}
 
 .chapter {
   position: relative;
