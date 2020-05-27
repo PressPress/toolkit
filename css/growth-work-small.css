@@ -30,6 +30,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+p {
+  margin-bottom: 10px;
+  color: purple;
+}
+
 #home-mobile {
   display: block;
   position: absolute;
