@@ -425,7 +425,7 @@ hr.big-1 {
   cursor: pointer;
   font-size: .7em;
   vertical-align: super;
-  text-decoration: underline yellow;
+  text-decoration: underline;
 }
 
 .blue {
