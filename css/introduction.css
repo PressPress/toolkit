@@ -163,7 +163,7 @@ hr.big-3 {
   border-radius: 5px;
   position: relative;
   z-index: 2;
-  width: calc(100% - 45px);
+  width: calc(100% - 35px);
   margin: 0px 0 0 15px;
 }
 
@@ -213,7 +213,6 @@ hr.big-mobile {
   right: 40px;
   font-size: 3.5vw;
   margin-top: 4px;
-  padding-right: 8px;
   margin-right: -8px;
 }
 
