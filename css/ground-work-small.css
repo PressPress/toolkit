@@ -27,7 +27,8 @@ body::-webkit-scrollbar {
 }
 
 p {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
+	color: purple;
 }
 
 #home {
@@ -350,6 +351,10 @@ hr.big-1 {
   z-index: 2;
   position: relative;
   margin: 0 15px 0 15px;
+}
+
+.chapter-text a {
+ text-decoration: underline yellow;
 }
 
 @media only screen and (max-width: 400px) {
