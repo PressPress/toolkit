@@ -5,10 +5,20 @@ html {
   letter-spacing: .001em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
   background: white;
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #menu {
@@ -53,7 +63,12 @@ body {
   overflow: scroll;
   z-index: 10;
   background-color: #f39bc2;
-  overflow-x: hidden;
+  overflow-x: scroll;
+	-ms-overflow-style: none;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
 }
 
 #right-half {
@@ -62,7 +77,12 @@ body {
   height: calc(100% - 20px);
   top: 10px;
   right: 10px;
-  overflow: scroll;
+  overflow: hidden;
+	-ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
 }
 
 #left-gradient {
