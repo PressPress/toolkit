@@ -27,6 +27,12 @@ body {
   display: none;
 }
 
+.download {
+  font-family: 'Blitz', sans-serif;
+  font-size: 3.25vw;
+  line-height: 1em;
+}
+
 /* BORDER */
 
 #top, #bottom, #left, #right, #middle {
