@@ -347,6 +347,10 @@ hr.big-1 {
 	color: white;
 }
 
+.chapter-text>a {
+ 	text-decoration: underline;
+}
+
 @media only screen and (max-width: 400px) {
   .chapter-text {
     font-size: 1em;
@@ -405,7 +409,7 @@ hr.big-1 {
   cursor: pointer;
   font-size: .7em;
   vertical-align: super;
-  text-decoration: underline yellow;
+  text-decoration: underline;
 }
 
 .blue {
