@@ -26,6 +26,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+  .download {
+    font-family: 'Blitz', sans-serif;
+    font-size: 6.5vw;
+    line-height: 1em;
+  }
+
 #home {
   display: none;
 }
